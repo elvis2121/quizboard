@@ -44,3 +44,13 @@ input[type="radio"]{font-size:120px; }
 .question3{margin-top: 25px;}
 .question4{margin-top: 25px;}
 .question5{margin-top: 25px;}
+
+#submit_button{width: 20%;
+              margin-top: 25px;
+              padding: 10px;
+}
+
+#reset_button{width: 20%;
+              margin-top: 25px;
+              padding: 10px;
+}        
