@@ -6,25 +6,7 @@ var res1,res2,res3,res4,res5,marks,grade;
 function addition(val1,val2,val3,val4,val5){
   return(val1+val2+val3+val4+val5);
 }
-// Business logic
-
-$(document).ready(function() {
-  $(".results").hide();
-  $("#submit_button").click(function () {
-    answer1 = $("input[name='question1']:checked").val();
-    user_Input.push(answer1);
-    
-    answer2 =$("input[name='question2']:checked").val();
-    user_Input.push(answer2);
-    
-    answer3 =$("input[name='question3']:checked").val();
-    user_Input.push(answer3);
-    
-    answer4 =$("input[name='question4']:checked").val();
-    user_Input.push(answer4);
-    
-    answer5 =$("input[name='question5']:checked").val();
-    user_Input.push(answer5);    
+// Business logic    
     
     if(user_Input[0] === answers[0]){
       res1=20;
@@ -62,11 +44,31 @@ $(document).ready(function() {
     }if (marks<50) {
       grade="POOR";      
     }     
-  }); 
-});
+
 
 
 // interface logic
+
+$(document).ready(function() {
+  $(".results").hide();
+  $("#submit_button").click(function () {
+    answer1 = $("input[name='question1']:checked").val();
+    user_Input.push(answer1);
+    
+    answer2 =$("input[name='question2']:checked").val();
+    user_Input.push(answer2);
+    
+    answer3 =$("input[name='question3']:checked").val();
+    user_Input.push(answer3);
+    
+    answer4 =$("input[name='question4']:checked").val();
+    user_Input.push(answer4);
+    
+    answer5 =$("input[name='question5']:checked").val();
+    user_Input.push(answer5);
+    
+  }); 
+});    
 
 $(document).ready(function(){
   $("#submit_button").click(function() {
