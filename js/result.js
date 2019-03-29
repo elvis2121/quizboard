@@ -1,5 +1,5 @@
 
-var user_input =[];
+var user_Input =[];
 var answers = ['compiled language','12','prompt','vowel','Modular JavaScript'];
 var score = 0;
 var res1,res2,res3,res4,res5,marks,grade;
@@ -13,42 +13,42 @@ $(document).ready(function() {
   $(".results").hide();
   $("#submit_button").click(function () {
     answer1 = $("input[name='question1']:checked").val();
-    user_input.push(answer1);
+    user_Input.push(answer1);
     
     answer2 =$("input[name='question2']:checked").val();
-    user_input.push(answer2);
+    user_Input.push(answer2);
     
     answer3 =$("input[name='question3']:checked").val();
-    user_input.push(answer3);
+    user_Input.push(answer3);
     
     answer4 =$("input[name='question4']:checked").val();
-    user_input.push(answer4);
+    user_Input.push(answer4);
     
     answer5 =$("input[name='question5']:checked").val();
-    user_input.push(answer5);    
+    user_Input.push(answer5);    
     
-    if(user_input[0] === answers[0]){
+    if(user_Input[0] === answers[0]){
       res1=20;
     }else {
       res1=0;
     }
-    if (user_input[1]===answers[1]) {
+    if (user_Input[1]===answers[1]) {
       res2=20;      
     }else {
       res2=0;
     }
-    if (user_input[2]=== answers[2]) {
+    if (user_Input[2]=== answers[2]) {
       res3=20;      
     }else {
       res3=0;
     }
-    if (user_input[3] === answers[3]) {
+    if (user_Input[3] === answers[3]) {
       res4=20;
       
     }else {
       res4 = 0;
     }
-    if (user_input[4]=== answers[4]) {
+    if (user_Input[4]=== answers[4]) {
       res5=20;
     }else {
       res5=0;
