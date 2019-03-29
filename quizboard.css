@@ -53,4 +53,23 @@ input[type="radio"]{font-size:120px; }
 #reset_button{width: 20%;
               margin-top: 25px;
               padding: 10px;
+}
+
+
+footer{margin-right: 0px;
+background-color: green;
+margin-top: 25px;
+border-radius: 20px;
+border: solid orange 5px;
+}
+
+.main_footer{padding: 20px;
+       
+             
+}
+
+.main_footer h3{text-align: center;
+          font-size: 40px;
+          color: #003fd3;
+
 }        
