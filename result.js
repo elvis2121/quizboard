@@ -3,6 +3,11 @@ var answers = ['compiled language','12','prompt','vowel','Modular JavaScript'];
 var score = 0;
 var res1,res2,res3,res4,res5,marks,grade;
 
+function addition(val1,val2,val3,val4,val5){
+  return(val1+val2+val3+val4+val5);
+}
+
+
 
 $(document).ready(function() {
   $(".results").hide();
@@ -21,6 +26,22 @@ $(document).ready(function() {
     
     answer5 =$("input[name='question5']:checked").val();
     user_input.push(answer5);
+    
+    marks =addition(res1,res2,res3,res4,res5);
+    
+    if (marks>=80) {
+    grade= "EXCELLENT";      
+  }if (marks>=50 && marks<80) {
+    grade= "FAIR";      
+  }if (marks<50) {
+    grade="POOR";      
+  } 
+  
+  
+});  
+
+});
+
     
     
     
