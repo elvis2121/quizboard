@@ -6,9 +6,7 @@ var res1,res2,res3,res4,res5,marks,grade;
 function addition(val1,val2,val3,val4,val5){
   return(val1+val2+val3+val4+val5);
 }
-// Business logic
-
-    
+// Business logic    
     
     if(user_Input[0] === answers[0]){
       res1=20;
