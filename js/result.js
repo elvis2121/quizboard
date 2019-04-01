@@ -1,4 +1,3 @@
-
 var user_Input =[];
 var answers = ['compiled language','12','prompt','vowel','Modular JavaScript'];
 var result1,result2,result3,result4,result5,marks,grade;
