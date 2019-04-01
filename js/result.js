@@ -3,8 +3,8 @@ var user_Input =[];
 var answers = ['compiled language','12','prompt','vowel','Modular JavaScript'];
 var result1,result2,result3,result4,result5,marks,grade;
 
-function addition(val1,val2,val3,val4,val5){
-  return(val1+val2+val3+val4+val5);
+function addition(value1,value2,value3,value4,value5){
+  return(value1+value2+value3+value4+value5);
 }
 // Business logic    
     
@@ -73,8 +73,7 @@ $(document).ready(function() {
 $(document).ready(function(){
   $("#submit_button").click(function() {
     $(".results").show();    
-    $(".results").html("YOU HAVE SCORED: ".concat(marks) + "<br> WHICH IS GRADE:
-     ".concat(grade));
+    $(".results").html("YOU HAVE SCORED: ".concat(marks) + "<br> WHICH IS GRADE: ".concat(grade));
     $(".results").animate({top: '850px',left:'400px'},"slow");
     
     function blink_text() {
