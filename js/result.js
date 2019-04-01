@@ -1,12 +1,53 @@
 
 var user_Input =[];
 var answers = ['compiled language','12','prompt','vowel','Modular JavaScript'];
-var res1,res2,res3,res4,res5,marks,grade;
+var result1,result2,result3,result4,result5,marks,grade;
 
-function addition(val1,val2,val3,val4,val5){
-  return(val1+val2+val3+val4+val5);
+function addition(value1,value2,value3,value4,value5){
+  return(value1+value2+value3+value4+value5);
 }
-// Business logic
+// Business logic    
+    
+    if(user_Input[0] === answers[0]){
+      result1=20;
+    }else {
+      result1=0;
+    }
+    if (user_Input[1]===answers[1]) {
+      result2=20;      
+    }else {
+      result2=0;
+    }
+    if (user_Input[2]=== answers[2]) {
+      result3=20;      
+    }else {
+      result3=0;
+    }
+    if (user_Input[3] === answers[3]) {
+      result4=20;
+      
+    }else {
+      result4 = 0;
+    }
+    if (user_Input[4]=== answers[4]) {
+      result5=20;
+    }else {
+      result5=0;
+    }
+    
+    marks =addition(result1,result2,result3,result4,result5);
+    
+    if (marks>=80) {
+      grade= "EXCELLENT";      
+    }if (marks>=50 && marks<80) {
+      grade= "FAIR";      
+    }if (marks<50) {
+      grade="POOR";      
+    }     
+
+
+
+// interface logic
 
 $(document).ready(function() {
   $(".results").hide();
@@ -24,49 +65,10 @@ $(document).ready(function() {
     user_Input.push(answer4);
     
     answer5 =$("input[name='question5']:checked").val();
-    user_Input.push(answer5);    
+    user_Input.push(answer5);
     
-    if(user_Input[0] === answers[0]){
-      res1=20;
-    }else {
-      res1=0;
-    }
-    if (user_Input[1]===answers[1]) {
-      res2=20;      
-    }else {
-      res2=0;
-    }
-    if (user_Input[2]=== answers[2]) {
-      res3=20;      
-    }else {
-      res3=0;
-    }
-    if (user_Input[3] === answers[3]) {
-      res4=20;
-      
-    }else {
-      res4 = 0;
-    }
-    if (user_Input[4]=== answers[4]) {
-      res5=20;
-    }else {
-      res5=0;
-    }
-    
-    marks =addition(res1,res2,res3,res4,res5);
-    
-    if (marks>=80) {
-      grade= "EXCELLENT";      
-    }if (marks>=50 && marks<80) {
-      grade= "FAIR";      
-    }if (marks<50) {
-      grade="POOR";      
-    }     
   }); 
-});
-
-
-// interface logic
+});    
 
 $(document).ready(function(){
   $("#submit_button").click(function() {
